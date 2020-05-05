@@ -1,0 +1,47 @@
+{
+  "keranjang": [
+    {
+      "pembelian": [
+        {
+          "id": 4,
+          "jumlah": 6
+        },
+        {
+          "id": 3,
+          "jumlah": 1
+        },
+        {
+          "id": 2,
+          "jumlah": 1
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "produk": [
+    {
+      "id": 1,
+      "nama": "JBL C150SI In Ear Headphones with Mic JBL C100SI New Model GARANSI IMS - Hitam",
+      "imgUrl": "https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2019/3/27/519509/519509_17c4fc0c-f2e2-4b78-b705-ffd6d6d8c458_2048_2048.jpg.webp",
+      "harga": 99000
+    },
+    {
+      "id": 2,
+      "nama": "AKKO",
+      "imgUrl": "https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2019/9/7/6636634/6636634_276fecce-e727-4c3e-a74e-86768479e10e_1069_1069.webp",
+      "harga": 1299000
+    },
+    {
+      "id": 3,
+      "nama": "Logitech MX Master 3 Wireless Bluetooth Mouse",
+      "imgUrl": "https://ecs7.tokopedia.net/img/cache/200-square/attachment/2020/3/6/158342862263120/158342862263120_d1fd88d2-1cdf-4462-807e-082289114350.png.webp",
+      "harga": 2200000
+    },
+    {
+      "id": 4,
+      "nama": "Kursi Gaming Cougar Armor Gaming",
+      "imgUrl": "https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/3/13/252625/252625_6f5efe99-6148-4c17-833c-55bf9ab9800a_800_800.jpg.webp",
+      "harga": 3800000
+    }
+  ]
+}

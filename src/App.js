@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import localforage from 'localforage';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+
+import reducers from './reducers';
+
+import Keranjang from './components/keranjang';
+import Produk from './components/produk';
+
+
+try {
+  const fun = async () => {
+    console.log('halo');
+    const val = await localforage.getItem('keranjang');
+    window.dataKeranjang = val;
+  }
+  fun()
+
+}catch{
+  console.error('belum bisa pakai localforage')
+}
+
+const store = createStore(reducers, applyMiddleware(thunk));
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+    
+      <Produk/>
+      <Keranjang/>
+
+    
+    </Provider>
   );
 }
 
